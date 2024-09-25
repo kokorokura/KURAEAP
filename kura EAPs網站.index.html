@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EAPs 員工協助窗口</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', sans-serif;
+            background-color: #e0f7fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #1e88e5;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            font-size: 28px;
+            color: #1e88e5;
+        }
+        button {
+            background-color: #42a5f5;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #1e88e5;
+        }
+        form input, form textarea, form select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        form textarea {
+            height: 100px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1e88e5;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>EAPs 員工協助窗口</h1>
+</header>
+
+<section>
+    <h2>提交需求或問題</h2>
+    <form>
+        <label for="name">姓名（可選）:</label>
+        <input type="text" id="name" name="name">
+
+        <label for="employeeId">員工ID（可選）:</label>
+        <input type="text" id="employeeId" name="employeeId">
+
+        <label for="category">問題類型:</label>
+        <select id="category" name="category">
+            <option value="心理健康">心理健康</option>
+            <option value="工作壓力">工作壓力</option>
+            <option value="職場人際">職場人際</option>
+        </select>
+
+        <label for="details">問題詳述:</label>
+        <textarea id="details" name="details"></textarea>
+
+        <label for="response">希望的回應方式:</label>
+        <select id="response" name="response">
+            <option value="email">電子郵件</option>
+            <option value="phone">電話</option>
+            <option value="in-person">面對面</option>
+        </select>
+
+        <button type="submit">提交需求</button>
+    </form>
+</section>
+
+<section>
+    <h2>員工需求分析</h2>
+    <p>這裡展示員工需求的統計數據和分析報告。</p>
+</section>
+
+<section>
+    <h2>我們的回應</h2>
+    <p>展示如何回應和處理員工需求，並提供聯繫方式。</p>
+</section>
+
+<footer>
+    © 2024 EAPs 員工協助計劃
+</footer>
+
+</body>
+</html>
